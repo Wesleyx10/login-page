@@ -1,0 +1,558 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font: roboto;
+  --btn-color: #f9d783;
+  --popular-color: #000b6b;
+  --coming-color: #c9fad6;
+  --price-border: #001c80;
+  --basic-color: #f1f1f1;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, #fff, #dccc7b);
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+.pick {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  margin-top: 1rem;
+}
+.pick .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.pick .text #pi {
+  font-family: poppins;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 800;
+}
+.pick .text #pr {
+  font-family: var(--font);
+  text-align: center;
+  font-weight: 600;
+}
+.pick .try {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: var(--font);
+  align-items: center;
+}
+.pick .try .images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pick .try .images span {
+  font-weight: 400;
+  font-size: 18px;
+}
+.pick .try .images #we {
+  font-size: 13px;
+  white-space: nowrap;
+}
+.pick .try .images img {
+  width: 330px;
+}
+.pick .try #try {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.pick .try #sign {
+  background-color: white;
+  display: flex;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+  align-items: center;
+  border: 2px solid var(--price-border);
+  border-radius: 8px;
+}
+.pick .try #sign #get {
+  font-size: 13px;
+  font-weight: 500;
+}
+.pick .try #sign a {
+  text-decoration: none;
+  color: var(--price-border);
+  background-color: var(--btn-color);
+  padding: 0.3rem;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font);
+  gap: 0.5rem;
+}
+.plans .year {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin-top: 0.5rem;
+  border: 1.7px solid black;
+}
+.plans .year #mo {
+  background-color: black;
+  color: white;
+  padding: 0.6rem 2.5rem;
+}
+.plans .year #ye {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding-right: 1.5rem;
+}
+.plans .year #ye a {
+  text-decoration: none;
+  color: black;
+  background-color: var(--btn-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+.plans .price {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.plans .price .basic {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: white;
+  padding: 1rem 1rem 0.5rem 1rem;
+  border: 2px solid var(--price-border);
+}
+.plans .price .basic #basic {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.plans .price .basic #basic #ba {
+  background-color: var(--basic-color);
+  width: 16%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.plans .price .basic #basic #for {
+  font-size: 11px;
+  font-weight: 300;
+}
+.plans .price .basic #no h1 {
+  font-size: 30px;
+}
+.plans .price .basic #check {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 10px;
+  white-space: nowrap;
+}
+.plans .price .basic #check #br {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.plans .price .basic #check #br #co {
+  background-color: var(--coming-color);
+  color: green;
+  padding: 0.2rem;
+}
+.plans .price .basic #button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.plans .price .basic #button a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.4rem 2rem;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.plans .price .basic #button span {
+  font-size: 10px;
+  font-weight: 300;
+}
+.plans .price .popular {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--popular-color);
+  padding: 1.5rem 1rem 0.5rem 1rem;
+  border: 2px solid var(--price-border);
+}
+.plans .price .popular #popular {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.plans .price .popular #popular #po {
+  background-color: #a9b2ff;
+  width: 17%;
+  padding: 0.3rem;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.plans .price .popular #popular #ba {
+  background-color: var(--basic-color);
+  width: 37%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 500;
+}
+.plans .price .popular #popular #for {
+  font-size: 11px;
+  font-weight: 300;
+  color: white;
+}
+.plans .price .popular #no {
+  color: white;
+}
+.plans .price .popular #no h1 {
+  font-size: 30px;
+}
+.plans .price .popular #check {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 10px;
+  white-space: nowrap;
+  color: white;
+}
+.plans .price .popular #check #br {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.plans .price .popular #check #br #co {
+  background-color: var(--coming-color);
+  color: green;
+  padding: 0.2rem;
+}
+.plans .price .popular #button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.plans .price .popular #button a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.4rem 2rem;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.plans .price .popular #button span {
+  font-size: 10px;
+  font-weight: 300;
+  color: white;
+}
+.plans .price .adv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: white;
+  padding: 1rem 1rem 0.5rem 1rem;
+  border: 2px solid var(--price-border);
+}
+.plans .price .adv #adv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.plans .price .adv #adv #ba {
+  background-color: var(--basic-color);
+  width: 28%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.plans .price .adv #adv #for {
+  font-size: 11px;
+  font-weight: 300;
+}
+.plans .price .adv #no h1 {
+  font-size: 30px;
+}
+.plans .price .adv #check {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 10px;
+  white-space: nowrap;
+}
+.plans .price .adv #check #br {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.plans .price .adv #check #br #co {
+  background-color: var(--coming-color);
+  color: green;
+  padding: 0.2rem;
+}
+.plans .price .adv #button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.plans .price .adv #button a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.4rem 2rem;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.plans .price .adv #button span {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 500px) {
+  .pick {
+    gap: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .pick .try #sign {
+    padding: 0.7rem 0.5rem;
+  }
+  .pick .try #sign #get {
+    font-size: 12px;
+  }
+  .pick .try .images {
+    gap: 1rem;
+  }
+  .pick .try .images #we {
+    font-size: 12px;
+  }
+  .plans {
+    margin-top: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .plans .price {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .plans .price .basic {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    gap: 1.5rem;
+  }
+  .plans .price .basic #basic #ba {
+    font-size: 15px;
+    width: 22%;
+  }
+  .plans .price .basic #basic #for {
+    font-size: 15px;
+  }
+  .plans .price .basic #no h1 {
+    font-size: 50px;
+  }
+  .plans .price .basic #check {
+    font-size: 14px;
+  }
+  .plans .price .basic #button a {
+    font-size: 13px;
+  }
+  .plans .price .basic #button span {
+    font-size: 13px;
+  }
+  .plans .price .popular {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    gap: 1.5rem;
+  }
+  .plans .price .popular #popular #ba {
+    font-size: 15px;
+    width: 42%;
+  }
+  .plans .price .popular #popular #for {
+    font-size: 15px;
+  }
+  .plans .price .popular #no h1 {
+    font-size: 50px;
+  }
+  .plans .price .popular #check {
+    font-size: 14px;
+  }
+  .plans .price .popular #button a {
+    font-size: 13px;
+  }
+  .plans .price .popular #button span {
+    font-size: 13px;
+  }
+  .plans .price .adv {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    gap: 1.5rem;
+  }
+  .plans .price .adv #adv #ba {
+    font-size: 15px;
+    width: 33%;
+  }
+  .plans .price .adv #adv #for {
+    font-size: 15px;
+  }
+  .plans .price .adv #no h1 {
+    font-size: 50px;
+  }
+  .plans .price .adv #check {
+    font-size: 14px;
+  }
+  .plans .price .adv #button a {
+    font-size: 13px;
+  }
+  .plans .price .adv #button span {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 510px) and (max-width: 835px) {
+  .pick {
+    gap: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .pick .try #sign {
+    padding: 0.7rem 0.5rem;
+  }
+  .pick .try #sign #get {
+    font-size: 12px;
+  }
+  .pick .try .images {
+    gap: 1rem;
+  }
+  .pick .try .images #we {
+    font-size: 12px;
+  }
+  .plans {
+    margin-top: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .plans .year #mo {
+    padding: 1rem 4rem;
+    font-size: 25px;
+  }
+  .plans .year #ye {
+    padding-right: 3rem;
+    font-size: 25px;
+  }
+  .plans .price {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .plans .price .basic {
+    padding: 3rem 3rem 2rem 3rem;
+    gap: 1.5rem;
+  }
+  .plans .price .basic #basic #ba {
+    font-size: 30px;
+    width: 34%;
+  }
+  .plans .price .basic #basic #for {
+    font-size: 25px;
+  }
+  .plans .price .basic #no h1 {
+    font-size: 60px;
+  }
+  .plans .price .basic #no h5 {
+    font-size: 20px;
+  }
+  .plans .price .basic #check {
+    font-size: 23px;
+  }
+  .plans .price .basic #button a {
+    font-size: 23px;
+  }
+  .plans .price .basic #button span {
+    font-size: 23px;
+  }
+  .plans .price .popular {
+    padding: 3rem 3rem 2rem 3rem;
+    gap: 1.5rem;
+  }
+  .plans .price .popular #popular #po {
+    font-size: 20px;
+  }
+  .plans .price .popular #popular #ba {
+    font-size: 30px;
+    width: 54%;
+  }
+  .plans .price .popular #popular #for {
+    font-size: 25px;
+  }
+  .plans .price .popular #no h1 {
+    font-size: 60px;
+  }
+  .plans .price .popular #no h5 {
+    font-size: 20px;
+  }
+  .plans .price .popular #check {
+    font-size: 23px;
+  }
+  .plans .price .popular #button a {
+    font-size: 23px;
+  }
+  .plans .price .popular #button span {
+    font-size: 23px;
+  }
+  .plans .price .adv {
+    padding: 3rem 3rem 2rem 3rem;
+    gap: 1.5rem;
+  }
+  .plans .price .adv #adv #ba {
+    font-size: 30px;
+    width: 40%;
+  }
+  .plans .price .adv #adv #for {
+    font-size: 25px;
+  }
+  .plans .price .adv #no h1 {
+    font-size: 60px;
+  }
+  .plans .price .adv #no h5 {
+    font-size: 20px;
+  }
+  .plans .price .adv #check {
+    font-size: 23px;
+  }
+  .plans .price .adv #button a {
+    font-size: 23px;
+  }
+  .plans .price .adv #button span {
+    font-size: 23px;
+  }
+}/*# sourceMappingURL=style.css.map */
