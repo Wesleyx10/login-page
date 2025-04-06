@@ -116,12 +116,14 @@ body {
       background-color: black;
       color: white;
       padding: 0.6rem 2.5rem;
+      cursor: pointer;
     }
     #ye {
       display: flex;
       align-items: center;
       gap: 0.7rem;
       padding-right: 1.5rem;
+      cursor: pointer;
       a {
         text-decoration: none;
         color: black;
@@ -144,6 +146,8 @@ body {
       background-color: white;
       padding: 1rem 1rem 0.5rem 1rem;
       border: 2px solid var(--price-border);
+      transition: transform 0.3s ease;
+
       #basic {
         display: flex;
         flex-direction: column;
@@ -204,6 +208,9 @@ body {
         }
       }
     }
+    .basic:hover{
+      transform: scale(0.9);
+    }
     .popular {
       display: flex;
       flex-direction: column;
@@ -211,6 +218,7 @@ body {
       background-color: var(--popular-color);
       padding: 1.5rem 1rem 0.5rem 1rem;
       border: 2px solid var(--price-border);
+      transition: transform 0.7s ease;
       #popular {
         display: flex;
         flex-direction: column;
@@ -281,6 +289,9 @@ body {
         }
       }
     }
+    .popular:hover {
+      transform: scale(0.91);
+    }
     .adv {
       display: flex;
       flex-direction: column;
@@ -288,6 +299,7 @@ body {
       background-color: white;
       padding: 1rem 1rem 0.5rem 1rem;
       border: 2px solid var(--price-border);
+      transition: transform 0.7s ease;
       #adv {
         display: flex;
         flex-direction: column;
@@ -347,6 +359,9 @@ body {
           font-weight: 300;
         }
       }
+    }
+    .adv:hover{
+      transform: scale(0.9);
     }
   }
 }

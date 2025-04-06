@@ -119,12 +119,14 @@ body {
   background-color: black;
   color: white;
   padding: 0.6rem 2.5rem;
+  cursor: pointer;
 }
 .plans .year #ye {
   display: flex;
   align-items: center;
   gap: 0.7rem;
   padding-right: 1.5rem;
+  cursor: pointer;
 }
 .plans .year #ye a {
   text-decoration: none;
@@ -146,6 +148,7 @@ body {
   background-color: white;
   padding: 1rem 1rem 0.5rem 1rem;
   border: 2px solid var(--price-border);
+  transition: transform 0.3s ease;
 }
 .plans .price .basic #basic {
   display: flex;
@@ -202,6 +205,9 @@ body {
   font-size: 10px;
   font-weight: 300;
 }
+.plans .price .basic:hover {
+  transform: scale(0.9);
+}
 .plans .price .popular {
   display: flex;
   flex-direction: column;
@@ -209,6 +215,7 @@ body {
   background-color: var(--popular-color);
   padding: 1.5rem 1rem 0.5rem 1rem;
   border: 2px solid var(--price-border);
+  transition: transform 0.7s ease;
 }
 .plans .price .popular #popular {
   display: flex;
@@ -278,6 +285,9 @@ body {
   font-weight: 300;
   color: white;
 }
+.plans .price .popular:hover {
+  transform: scale(0.91);
+}
 .plans .price .adv {
   display: flex;
   flex-direction: column;
@@ -285,6 +295,7 @@ body {
   background-color: white;
   padding: 1rem 1rem 0.5rem 1rem;
   border: 2px solid var(--price-border);
+  transition: transform 0.7s ease;
 }
 .plans .price .adv #adv {
   display: flex;
@@ -340,6 +351,9 @@ body {
 .plans .price .adv #button span {
   font-size: 10px;
   font-weight: 300;
+}
+.plans .price .adv:hover {
+  transform: scale(0.9);
 }
 
 @media only screen and (max-width: 500px) {
